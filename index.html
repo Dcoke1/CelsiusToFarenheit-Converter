@@ -14,14 +14,24 @@
   <script type="text/javascript" src="js/converter.js"></script>
 </head>
 
+<body>
+<div id="display"></div>
+
 
 <div id="converter">
   <form>
   <div class="form-group">
     <strong><center><label for="inputCell">°C to °F</label></center></strong>
-    <input type="text" class="form-control" id="inputCell" aria-describedby="emailHelp" placeholder="Enter degree celsius...">
+    <input type="number" class="form-control" id="inputCell" onInput="input(event)" aria-describedby="emailHelp" placeholder="Enter degree celsius...">
   </div>
 </form>
 </div>
+
+<footer>
+  <h5 id="footer1"> Created by <a id="tribute-link" target="_blank" href="https://github.com/Dcoke1"> Douglas Coke<a/></h5>
+</footer>
+
+</body>
+
 
 
