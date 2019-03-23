@@ -1,10 +1,14 @@
+/*===========Google Font Import============== */
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+/*===========Body Positioning==========*/
 body {
 display: flex;
 justify-content: center;
+margin: 1.5rem;
 }
 
+/*===========Converter Input Box Positioning==========*/
 #converter {
 position: absolute;
 width: 100%;
@@ -16,10 +20,10 @@ justify-content: center;
 overflow: hidden;
 }
 
+/*===========Converter Input Box Border Font==========*/
 .form-control {
 width: 100%;
 border: outset;
-border-color: ;
 border-radius: 150px;
 box-shadow: 0px 5px 38px rgba(0,0,0,0.65), 0 15px 12px rgba(0,0,0,0.22); 
 background: linear-gradient(60deg, #fbff04, #d3e024, #A8CAF6 ,#05a3ff, #1205ff);
@@ -27,10 +31,11 @@ animation: animatedgradient 7s ease alternate infinite;
 background-size: 300% 300%;
 }
 
+/*===========HTML Text Positioning and Font==========*/
 #display {
 position: absolute;
 width: 100%;
-font-size: 7.1rem;
+font-size: 6rem;
 font-family: Raleway;
 font-weight: bolder;
 color: #A8CAF6;
@@ -38,6 +43,24 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
+}
+
+/*===========Input Box Background Animation Style==========*/
+@keyframes animatedgradient {
+0% {
+	background-position: 0% 50%;
+}
+50% {
+	background-position: 100% 50%;
+}
+100% {
+	background-position: 0% 50%;
+}
+}
+
+/*===========Signature Styling==========*/
+h5:hover {
+transform: scale(2.1);
 }
 
 footer {
@@ -51,22 +74,4 @@ margin-bottom: 25px;
 
 a {
 	color: #05a3ff;
-}
-
-
-h5:hover {
-transform: scale(2.1);
-}
-
-
-@keyframes animatedgradient {
-0% {
-	background-position: 0% 50%;
-}
-50% {
-	background-position: 100% 50%;
-}
-100% {
-	background-position: 0% 50%;
-}
 }
